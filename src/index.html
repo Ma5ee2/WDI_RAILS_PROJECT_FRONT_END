@@ -13,5 +13,16 @@
   <body ng-controller="MainCtrl as main">
 
 
+   <ul ng-repeat="restaurant in main.restaurants">
+    <li >Address: {{ restaurant.address }} </li>
+    <li >Name: {{ restaurant.name }} </li>
+    <li >Description:{{ restaurant.description }} </li>
+    <ul ng-repeat="review in main.reviews">
+     <li >Comments: {{ review.content }} </li>
+   </ul>
+  </ul>
+
+
+
   </body>
 </html>
