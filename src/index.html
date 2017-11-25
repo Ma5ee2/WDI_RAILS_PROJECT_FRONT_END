@@ -17,10 +17,12 @@
     <li >Address: {{ restaurant.address }} </li>
     <li >Name: {{ restaurant.name }} </li>
     <li >Description:{{ restaurant.description }} </li>
+    <li >Comments: {{ restaurant.reviews }} </li>
+  <img ng-src="{{ restaurant.image }}"
+alt="{{ restaurant.name }} s image." width="200px" height="300px">
     <ul ng-repeat="review in main.reviews">
      <li >Comments: {{ review.content }} </li>
    </ul>
-  </ul>
 
 
 

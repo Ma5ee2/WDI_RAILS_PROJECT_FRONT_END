@@ -13,11 +13,12 @@ function MainCtrl($http) {
       console.log(vm.restaurants);
     });
 
-$http
-  .get('http://localhost:3000/api/reviews')
-  .then(res => {
-    vm.reviews = res.data;
-    console.log(vm.reviews);
-  });
+  
+  $http
+    .get('http://localhost:3000/api/reviews')
+    .then(res => {
+      vm.reviews = res.data;
+      console.log(vm.reviews);
+    });
 
 }
