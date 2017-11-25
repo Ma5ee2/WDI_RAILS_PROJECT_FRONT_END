@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html ng-app='front'>
+<html ng-app="front">
   <head>
     <meta charset="utf-8">
     <title>Angular Stack Setup</title>
@@ -9,21 +9,9 @@
     <!-- inject:css -->
     <!-- endinject -->
   </head>
-  <body>
-    <script>
-    angular
-      .module('front', [])
-      .controller('MainCtrl', MainCtrl);
 
-    function MainCtrl($http) {
-      const vm = this;
+  <body ng-controller="MainCtrl as main">
 
-      $http
-        .get('http://localhost:3000/restaurants')
-        .then(res => {
-          vm.restaurants = res.data;
-        });
-    }
-  </script>
+
   </body>
 </html>
