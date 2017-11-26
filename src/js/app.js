@@ -13,7 +13,7 @@ function MainCtrl($http) {
       console.log(vm.restaurants);
     });
 
-  
+
   $http
     .get('http://localhost:3000/api/reviews')
     .then(res => {
